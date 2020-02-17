@@ -14,6 +14,7 @@ Features:
 
 
 Technologies used:
+* [burst](https://burst.shopify.com/) was used to download the main page image
 
 
 

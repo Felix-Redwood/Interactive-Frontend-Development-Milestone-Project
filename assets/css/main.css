@@ -1,0 +1,73 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+bold {
+    font-weight: bold;
+}
+/* This gives us an easy way to make text bold within the html document */
+
+.container-fluid
+.col-12 {
+    margin: 0;
+    padding: 0;
+}
+/* ensures that the container-fluid and col-12 classes do not have any initial padding*/
+
+
+.mainpageimage-container {
+    height: 100vh;
+    width: 100%;
+
+    background: url(../images/mainpageimage.jpg) no-repeat top right fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+/*Mainpage*/
+
+.mainpage {
+    background-color: transparent !important;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.mainpage-h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 60px;
+    margin-bottom: 30px !important;
+    padding-top: 70px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.mainpage-h2 {
+    color: white;
+    font-size: 30px;
+}
+
+@media (max-width: 906px) {
+    .mainpage-h1 {
+        padding-top: 90px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 568px) {
+    .mainpage-h1 {
+        padding-top: 30px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
