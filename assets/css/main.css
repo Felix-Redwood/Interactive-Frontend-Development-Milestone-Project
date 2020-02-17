@@ -52,12 +52,13 @@ bold {
 
 .mainpage-h2 {
     color: white;
-    font-size: 30px;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 @media (max-width: 906px) {
     .mainpage-h1 {
-        padding-top: 90px;
+        padding-top: 60px;
         padding-left: 0;
         padding-right: 0;
     }
@@ -65,7 +66,7 @@ bold {
 
 @media (max-width: 568px) {
     .mainpage-h1 {
-        padding-top: 30px;
+        padding-top: 20px;
         padding-left: 0;
         padding-right: 0;
     }
