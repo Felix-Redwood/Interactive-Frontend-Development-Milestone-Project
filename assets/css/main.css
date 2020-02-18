@@ -43,22 +43,20 @@ bold {
 .mainpage-h1 {
     color: white;
     font-weight: bold;
-    font-size: 60px;
-    margin-bottom: 30px !important;
-    padding-top: 70px;
+    font-size: 3.4em;
+    margin-bottom: 0.8em !important;
     padding-left: 0;
     padding-right: 0;
 }
 
 .mainpage-h2 {
     color: white;
-    font-size: 20px;
+    font-size: 1em;
     font-weight: 500;
 }
 
 @media (max-width: 906px) {
     .mainpage-h1 {
-        padding-top: 60px;
         padding-left: 0;
         padding-right: 0;
     }
@@ -66,9 +64,43 @@ bold {
 
 @media (max-width: 568px) {
     .mainpage-h1 {
-        padding-top: 20px;
         padding-left: 0;
         padding-right: 0;
     }
 }
 
+.container-wrapper {
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+
+/* Email Harvester */
+
+.email-harvester {
+    background-color: #525252;
+    color: #fafafa;
+    margin: 0;
+}
+
+.email-box {
+    font-size: 1.5em;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 1.3em;
+    margin-bottom: 1.3em;
+}
+
+.email-input {
+    
+}
+
+.btn-warning {
+    color: #000 !important;
+    width: 20em;
+}
+
+small {
+    font-size: 0.4em !important;
+}
