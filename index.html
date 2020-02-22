@@ -14,7 +14,9 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
-
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/email.js"></script>
+    <script type="text/javascript" src="assets/js/maps.js"></script>
 </head>
 
 <body>
@@ -23,14 +25,14 @@
             <a href="index.html">
                 <img src="assets/images/navbar-logo.png" class="logo" alt="site_logo"/>
             </a>
-            <div class="navbar-contact">
-            <a href="#">
+            <div class="navbar-contact ml-auto">
+                <a href="#">
             <button type="button" class="btn btn-warning contact-button">Contact Us!</button>
             </a>
-        </div>
+            </div>
         </nav>
     </div>
-    
+
     <!--main page description-->
     <div class="container-fluid mainpageimage-container">
         <!--container-fluid makes the div occupy the whole page-->
@@ -51,7 +53,8 @@
         <div class="email-harvester">
             <section>
                 <div class="row">
-                    <div class="col-12 col-md-6 email-box">
+                    <div class="col-12 col-md-6 email-box" id="emailDesc">
+                        <!--Desc is short for description-->
                         <div class="media">
                             <div class="media-body">
                                 <p class="newsletter-title">Sign up to our newsletter!</p>
@@ -60,15 +63,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 email-box">
+                    <div class="col-12 col-md-6 email-box" id="emailSumbitContainer">
                         <div class="media">
                             <div class="media-body">
                                 <form action="" method="post">
                                     <!-- this form will gather the emails -->
                                     <label for="user-email" class="">Email:</label> <br>
                                     <input type="text" name="user-email" id="uemail" value=" Example@email.com " class="email-input" />
-                                    <small id="emailHelp" class="form-text">We'll never share your email with anyone else.</small>
-                                    <button type="button" class="btn btn-warning">Submit:</button>
+                                    <small class="form-text">We'll never share your email with anyone else.</small>
+                                    <p id="emailWrong"></p>
+                                    <button type="button" class="btn btn-warning" onclick="collectEmail()">Submit:</button>
                                     <!--TO DO - MAKE EMAIL FORM AND SUBMIT BUTTON GO SIDE BY SIDE-->
                                 </form>
                             </div>
@@ -85,8 +89,7 @@
         <div class="row">
             <div class="col-sm-4 footer-container">
                 <h5 class="uppercase">Queries:</h5>
-                <p>For any queries, complaints or comments, you can
-                email <a href="mailto:CONTACT EMAIL HERE" class="email-fade">CONTACT EMAIL</a></p>
+                <p>For any queries, complaints or comments, you can email <a href="mailto:CONTACT EMAIL HERE" class="email-fade">CONTACT EMAIL</a></p>
                 <!--this email, when clicked, will open an email template to contact YouGym-->
             </div>
             <div class="col-sm-4 footer-container">
