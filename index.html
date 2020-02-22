@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="assets/css/main.css" type="text/css" />
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
 
 </head>
 
@@ -32,15 +33,17 @@
         </div>
     </div>
     <!--/main page description-->
-    
+
     <div class="container-wrapper">
-        <div class="container content-container email-harvester">
+        <div class="email-harvester">
             <section>
                 <div class="row">
                     <div class="col-12 col-md-6 email-box">
                         <div class="media">
                             <div class="media-body">
-                                <p>Sign up to our newsletter!</p>
+                                <p class="newsletter-title">Sign up to our newsletter!</p>
+                                <p class="newsletter-para"></p>
+                                <!--para is short for paragraph-->
                             </div>
                         </div>
                     </div>
@@ -48,13 +51,13 @@
                         <div class="media">
                             <div class="media-body">
                                 <form action="" method="post">
-                                        <!-- this form will gather the emails -->
-                                        <label for="user-email" class="">Email:</label> <br>
-                                        <input type="text" name="user-email" id="uemail" value=" Example@email.com " class="email-input" />
-                                        <small id="emailHelp" class="form-text">We'll never share your email with anyone else.</small>
-                                        <button type="button" class="btn btn-warning">Submit:</button>
-                                        <!--TO DO - MAKE EMAIL FORM AND SUBMIT BUTTON GO SIDE BY SIDE-->
-                                    </form>
+                                    <!-- this form will gather the emails -->
+                                    <label for="user-email" class="">Email:</label> <br>
+                                    <input type="text" name="user-email" id="uemail" value=" Example@email.com " class="email-input" />
+                                    <small id="emailHelp" class="form-text">We'll never share your email with anyone else.</small>
+                                    <button type="button" class="btn btn-warning">Submit:</button>
+                                    <!--TO DO - MAKE EMAIL FORM AND SUBMIT BUTTON GO SIDE BY SIDE-->
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -64,6 +67,63 @@
         </div>
     </div>
 
+    <!-- footer -->
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4 footer-container">
+                <h5 class="uppercase">Queries:</h5>
+                <p>For any queries, complaints or comments, you can
+                email <a href="mailto:CONTACT EMAIL HERE" class="email-fade">CONTACT EMAIL</a></p>
+                <!--this email, when clicked, will open an email template to contact YouGym-->
+            </div>
+            <div class="col-sm-4 footer-container">
+                <h5 class="uppercase">About Us:</h5>
+                <p>YouGym was founded in 2008. Starting in Kent, England, it quickly spread across the country. Now, with 9 locations across England, YouGym is a leading brand in fitness and sports-science. </p>
+            </div>
+            <div class="col-sm-4 footer-container">
+                <h5 class="uppercase">Social Media Links:</h5>
+                <ul class="list-inline social-media">
+                    <li class="list-inline-item">
+                        <a target="_blank" href="#">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="#">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="#">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            <span class="sr-only">LinkedIn</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="#">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only">Instagram</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="#">
+                            <i class="fa fa-pinterest" aria-hidden="true"></i>
+                            <span class="sr-only">Pintrest</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="#">
+                            <i class="fa fa-youtube" aria-hidden="true"></i>
+                            <span class="sr-only">YouTube</span>
+                        </a>
+                    </li>
+                </ul>
+                <p>Follow us for fitness tips!</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

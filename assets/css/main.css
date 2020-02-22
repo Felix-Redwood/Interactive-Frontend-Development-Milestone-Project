@@ -92,6 +92,14 @@ bold {
     margin-bottom: 1.3em;
 }
 
+.email-title {
+    font-size: 1.5em;
+}
+
+.email-para {
+    font-size: 0.9em;
+}
+
 .email-input {
     
 }
@@ -118,4 +126,65 @@ small {
 .container {
     margin-right: 0 !important;
     margin-left: 0 !important;
+}
+
+/* Footer */
+
+footer {
+    background-color: #ffcc00;
+    color: #000;
+    font-weight: 520;
+    min-height: 120px;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-container {
+    padding: 2em;
+    /* em ensures that padding scales with screen size */
+}
+
+.footer-container p {
+    text-align: justify;
+    /* by justifying the text, the <p> elements look more professional */
+}
+
+.footer-container h5 {
+    font-weight: 550 !important;
+    /* overrides the normal h5 boldness */
+}
+
+.social-media li a i {
+    width: 35px;
+    height: 35px;
+    padding-top: 8px;
+    border-radius: 50%;
+    /* a border-radius of 50% gives us a circle */
+    text-align: center;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    /*this will be used for transitioning the items to a different color when hovered over */
+}
+
+.social-media li a i:hover {
+    color: #000;
+    background-color: #fff;
+    /* sets the icon color to black and background color to white when hovered over */
+    /* this helps distinguish the icon that will be clicked on */
+}
+
+/* Email-decoration */
+
+.email-fade {
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.email-fade:hover {
+    color: #408000;
+    /* gives a subtle change to the color of the email link when hovered over */
 }
