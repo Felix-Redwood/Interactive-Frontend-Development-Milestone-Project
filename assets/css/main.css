@@ -32,6 +32,18 @@ bold {
     position: relative;
 }
 
+/*Navbar*/
+.logo {
+    height: 2.115em;
+    width: 6em;
+    margin-left: -2em;
+}
+
+.contact-button {
+    width: 10em !important;
+    font-weight: bold !important;
+}
+
 /*Mainpage*/
 
 .mainpage {
