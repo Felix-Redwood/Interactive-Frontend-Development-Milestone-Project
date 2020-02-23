@@ -5,15 +5,15 @@ body {
 bold {
     font-weight: bold;
 }
+
 /* This gives us an easy way to make text bold within the html document */
 
-.container-fluid
-.col-12 {
+.container-fluid .col-12 {
     margin: 0;
     padding: 0;
 }
-/* ensures that the container-fluid and col-12 classes do not have any initial padding*/
 
+/* ensures that the container-fluid and col-12 classes do not have any initial padding*/
 
 .mainpageimage-container {
     height: 100vh;
@@ -33,6 +33,7 @@ bold {
 }
 
 /*Navbar*/
+
 .logo {
     height: 2.115em;
     width: 6em;
@@ -40,6 +41,11 @@ bold {
 }
 
 .contact-button {
+    width: 10em !important;
+    font-weight: bold !important;
+}
+
+.homepage-button {
     width: 10em !important;
     font-weight: bold !important;
 }
@@ -112,11 +118,9 @@ bold {
     font-size: 0.9em;
 }
 
-.email-input {
-    
-}
+.email-input {}
 
-.btn-warning {
+.btn-emailharvester {
     color: #000 !important;
     width: 20em;
 }
@@ -138,6 +142,29 @@ small {
 .container {
     margin-right: 0 !important;
     margin-left: 0 !important;
+}
+
+/* Contact */
+
+.contact-section {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    width: 50%;
+}
+
+.contact-form {
+    padding-top: 2em;
+    min-height: 15em;
+    margin: 0 auto;
+    width: 100%;
+    color: #fff;
+}
+
+.btn-send-mail {
+    margin-top: 0.4em;
+    color: #000 !important;
+    font-weight: bold !important;
+    width: 100% !important;
 }
 
 /* Footer */

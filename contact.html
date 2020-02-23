@@ -14,6 +14,14 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_VGmB9lBk3P7b5oqcK2H0e");
+            emailjs.send("gmail", "contact_template", {name: "YouGym", notes: "RE:" });
+        })();
+    </script>
 </head>
 
 <body>
@@ -23,60 +31,28 @@
                 <img src="assets/images/navbar-logo.png" class="logo" alt="site_logo"/>
             </a>
             <div class="navbar-contact ml-auto">
-                <a href="contact.html">
-            <button type="button" class="btn btn-warning contact-button">Contact Us!</button>
+                <a href="index.html">
+            <button type="button" class="btn btn-warning homepage-button">Home</button>
             </a>
             </div>
         </nav>
     </div>
 
-    <!--main page description-->
-    <div class="container-fluid mainpageimage-container">
-        <!--container-fluid makes the div occupy the whole page-->
-        <div class="row">
-            <div class="col-12">
-                <section class="mainpage text-center">
-                    <h1 class="mainpage-h1">YouGym</h1>
-                    <h2 class="mainpage-h2">The Gym for
-                        <bold>YOU</bold>
-                    </h2>
-                </section>
-            </div>
-        </div>
-    </div>
-    <!--/main page description-->
-
-    <div class="container-wrapper">
-        <div class="email-harvester">
-            <section>
-                <div class="row">
-                    <div class="col-12 col-md-6 email-box" id="emailDesc">
-                        <!--Desc is short for description-->
-                        <div class="media">
-                            <div class="media-body">
-                                <p class="newsletter-title">Sign up to our newsletter!</p>
-                                <p class="newsletter-para"></p>
-                                <!--para is short for paragraph-->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 email-box" id="emailSumbitContainer">
-                        <div class="media">
-                            <div class="media-body">
-                                <form action="" method="post">
-                                    <!-- this form will gather the emails -->
-                                    <label for="user-email" class="">Email:</label> <br>
-                                    <input type="text" name="uemail" id="uemail" class="email-input" placeholder=" Example@email.com " required />
-                                    <small class="form-text">We'll never share your email with anyone else.</small>
-                                    <button type="button" class="btn btn-warning btn-emailharvester" onclick="collectEmail()">Submit:</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
+    <div class="container-wrapper mainpageimage-container">
+        <section class="contact-section">
+            <div class="row bg-color-contact">
+                <div class="contact-form">
+                    <h3 class="contact-heading uppercase text-center">Any queries?</h3>
+                    <h5 class="uppercase text-center">Send us an email below!</h5>
+                    <form onsubmit="return sendEmail(this);">
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Name" required/>
+                        <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email Address" required/>
+                        <textarea rows="7" name="content" class="form-control" id="content" placeholder="Information" required></textarea>
+                        <button type="submit" class="btn btn-warning center-block btn-send-mail">Send Mail</button>
+                    </form>
                 </div>
-            </section>
-            <!--/main page links-->
-        </div>
+            </div>
+        </section>
     </div>
 
     <!-- footer -->
@@ -138,8 +114,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="assets/js/email.js"></script>
-    <script type="text/javascript" src="assets/js/maps.js"></script>
+    <script type="text/javascript" src="assets/js/contact.js"></script>
 </body>
 
 </html>
