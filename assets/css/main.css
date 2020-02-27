@@ -124,7 +124,7 @@ bold {
 }
 
 .newsletter-para {
-    font-size: 0.9em ;
+    font-size: 0.9em;
 }
 
 .email-title {
@@ -163,6 +163,24 @@ small {
     margin-left: 0 !important;
 }
 
+@media (max-width: 600px) {
+    .email-harvester {
+        padding-top: 1em;
+        padding-bottom: 1em;
+        margin: 0;
+    }
+    .email-box {
+        padding: 0.2em;
+        margin: 0;
+        /* em ensures that padding scales with screen size */
+    }
+    .sign-up-box {
+        padding: 0.2em;
+        margin: 0;
+        /* em ensures that padding scales with screen size */
+    }
+}
+
 /* Map */
 
 .map-title {
@@ -199,6 +217,13 @@ small {
     /* creates a margin around the map that adjusts with viewport size */
 }
 
+@media (max-width: 992px) {
+    .map-container {
+        padding: 0;
+        /* when on smaller screens, the map will take-up the full width of the screen so that it is easier to navigate */
+    }
+}
+
 /* Contact */
 
 .contact-section {
@@ -220,6 +245,15 @@ small {
     color: #000 !important;
     font-weight: bold !important;
     width: 100% !important;
+}
+
+@media (max-width: 600px) {
+    .contact-section {
+        padding-top: 2em;
+        padding-bottom: 2em;
+        width: 80%;
+        /* This makes the contact-section form wider on screens that are less wide */
+    }
 }
 
 /* Footer */
@@ -268,6 +302,19 @@ footer {
     /* sets the icon color to black and background color to white when hovered over */
     /* this helps distinguish the icon that will be clicked on */
 }
+
+@media (max-width: 600px) {
+    footer {
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+    .footer-container {
+        padding: 0.2em;
+        /* em ensures that padding scales with screen size */
+    }
+}
+
+/* On a mobile-device screen, the footer will be smaller and the child elements will fit together better */
 
 /* Email-decoration */
 
