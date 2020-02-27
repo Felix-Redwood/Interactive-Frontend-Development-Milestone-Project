@@ -24,6 +24,7 @@ bold {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-position: center;
 
     display: flex;
     align-items: center;
@@ -134,11 +135,13 @@ bold {
     font-size: 0.9em;
 }
 
-.email-input {}
+.email-input {
+    width: 11em;
+}
 
 .btn-emailharvester {
     color: #000 !important;
-    width: 20em;
+    width: 17em;
 }
 
 small {

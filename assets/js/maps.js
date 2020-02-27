@@ -1,7 +1,7 @@
 function initMap() {
-    var kent = { lat: 51.247017, lng: 0.948486 };
+    var center = { lat: 51.247017, lng: -0.1683 };
     var map = new google.maps.Map(
-        document.getElementById('map'), { zoom: 7, center: kent });
+        document.getElementById('map'), { zoom: 7, center: center });
 
     var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     // creates a list of labels for each marker, from A to Z.
