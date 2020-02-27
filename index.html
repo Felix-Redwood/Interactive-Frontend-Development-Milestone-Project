@@ -50,12 +50,18 @@
         <div class="email-harvester">
             <section>
                 <div class="row">
-                    <div class="col-12 col-md-6 email-box" id="emailDesc">
+                    <div class="col-12 col-md-6 sign-up-box" id="emailDesc">
                         <!--Desc is short for description-->
                         <div class="media">
                             <div class="media-body">
-                                <p class="newsletter-title">Sign up to our newsletter!</p>
-                                <p class="newsletter-para"></p>
+                                <p class="signup-title">Sign up to our newsletter!</p>
+                                <p class="newsletter-para">By signing up today, you will recieve:
+                                    <ul type="disc">
+                                        <li>Free meal plans and diet advice.</li>
+                                        <li>Weekly newsletter with advice from trusted nutritionists</li>
+                                        <li>Coupons for YouGym memberships and products</li>
+                                    </ul>
+                                </p>
                                 <!--para is short for paragraph-->
                             </div>
                         </div>
@@ -79,6 +85,20 @@
         </div>
     </div>
 
+    <div class="container-wrapper main-map-container">
+        <div class="media map-title">
+            <div class="media-body">
+                <h3 class="map-h3">YouGym has 9 locations across England!</h3>
+                <p class="map-p">Stop in and have a look around:</p>
+            </div>
+        </div>
+        <div class="map-container">
+            <div id="map">
+
+            </div>
+        </div>
+    </div>
+
     <!-- footer -->
     <footer class="container-fluid">
         <div class="row">
@@ -89,7 +109,7 @@
             </div>
             <div class="col-sm-4 footer-container">
                 <h5 class="uppercase">About Us:</h5>
-                <p>YouGym was founded in 2008. Starting in Kent, England, it quickly spread across the country. Now, with 9 locations across England, YouGym is a leading brand in fitness and sports-science. </p>
+                <p>YouGym was founded in 2008 in Kent, England and quickly spread across the country. <br> Now, with 9 locations across England, YouGym is a leading brand in fitness and sports-science. </p>
             </div>
             <div class="col-sm-4 footer-container">
                 <h5 class="uppercase">Social Media Links:</h5>
@@ -140,6 +160,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/js/email.js"></script>
     <script type="text/javascript" src="assets/js/maps.js"></script>
+    <script src="/maps/documentation/javascript/examples/markerclusterer/markerclustererplus@4.0.1.min.js">
+    </script>
+    <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVO4QLGAE9l2xTD0lCEarCmyyrTYqYrMw&callback=initMap">
+    </script>
 </body>
 
 </html>

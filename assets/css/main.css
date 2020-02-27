@@ -110,6 +110,22 @@ bold {
     margin-bottom: 1.3em;
 }
 
+.sign-up-box {
+    text-decoration: none;
+    color: #fff;
+    margin-top: 1.3em;
+    margin-bottom: 1.3em;
+}
+
+.signup-title {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.newsletter-para {
+    font-size: 0.9em ;
+}
+
 .email-title {
     font-size: 1.5em;
 }
@@ -142,6 +158,42 @@ small {
 .container {
     margin-right: 0 !important;
     margin-left: 0 !important;
+}
+
+/* Map */
+
+.map-title {
+    padding-top: 1em;
+    padding-left: 1em;
+    color: #404040;
+}
+
+.map-h3 {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.map-p {
+    font-size: 0.9em;
+}
+
+#map {
+    height: 30em;
+    width: 100%;
+    /* causes the map to fill the screen, making for better UX */
+}
+
+.main-map-container {
+    background-color: #cccccc;
+    height: 100%;
+}
+
+.map-container {
+    padding-top: 0;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+    /* creates a margin around the map that adjusts with viewport size */
 }
 
 /* Contact */
