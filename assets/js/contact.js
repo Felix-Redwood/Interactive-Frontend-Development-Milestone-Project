@@ -9,16 +9,10 @@ function sendEmail(contactForm) {
             })
         .then(
             function(response) {
-                var div = document.createElement('div');
-                div.classList.add('alert', 'alert-success');
-                div.role.add('alert');
-                div.textContent= "Your Email has been submitted succesfully";
-            
-                var confirmSubmit = document.getElementById('confirmSubmit');
-                confirmSubmit.prependChild(div);
+                alert('Thank you! \nYour email was submitted succesfully.');
             },
             function(error) {
-                console.log("FAILED", error);
+                alert('We are sorry \nYour email has failed to send \nTry again in a few minutes');
             });
     return false;
 }
