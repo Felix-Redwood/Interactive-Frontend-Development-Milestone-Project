@@ -19,7 +19,6 @@
     <script type="text/javascript">
         (function() {
             emailjs.init("user_VGmB9lBk3P7b5oqcK2H0e");
-            emailjs.send("gmail", "contact_template", {name: "YouGym", notes: "RE:" });
         })();
     </script>
 </head>
@@ -41,7 +40,7 @@
     <div class="container-wrapper mainpageimage-container">
         <section class="contact-section">
             <div class="row bg-color-contact">
-                <div class="contact-form">
+                <div class="contact-form" id="confirmSubmit">
                     <h3 class="contact-heading uppercase text-center">Any queries?</h3>
                     <h5 class="uppercase text-center">Send us an email below!</h5>
                     <form onsubmit="return sendEmail(this);">
