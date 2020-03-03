@@ -24,7 +24,7 @@ questions), so that I can decide if I want to sign up for YouGym's newsletter.
 
 By presenting a google map on the mainpage that displays the location of YouGym's fictional gyms, this user type is able to see 
 that YouGym is a real company with physical infrastructure. In addition, the submit form on the contact page allows this user 
-type to send emails to YouGym with any queries they may have. Finally, the use of a favicon and a <title> element on the site 
+type to send emails to YouGym with any queries they may have. Finally, the use of a favicon and a title element on the site 
 gives the site a sense of professionalism.
 
 Finally, beside the email submit form on the mainpage there is a small list of what the user will get if they sign up for the 
@@ -101,21 +101,46 @@ Technologies used:
 Testing:
 --------
 
+Contact form:
+1. Go to the 'contact us' page.
+2. Attempt to submit the empty form and verify that a 'please fill in this field' message appears.
+3. Fill out the form (name, email and information) and press submit and verify that an email with those contents was sent to 
+contactYouGym@gmail.com.
 
+Email harvester:
+1. Go to the email form on the main page.
+2. Fill out the form with an email and press submit. Verify that this email has been logged in the console.
+3. Write and submit additional emails in the form. Verify that these have been logged into an array instead of overwriting one another.
+
+This site's layout is designed to changed based on the screen size of the device that is viewing it. On a desktop, the map element on the
+main page has a padding of 2em to the left, right and bottom. On smaller devices (thinner than 992px), this would make the map element too
+small to reasonably view or interact with, so the padding is removed, and the map element spans the full width of the screen on these devices.
+
+Additionally, on devices thinner than 600px (primarily smartphones), the email-harvester child elements and the footer child elements will
+stack on top of each other.
+
+Deployment:
+-----------
+
+This project is deployed to GitHub pages, and can be viewed in its rendered form [here](https://felix-redwood.github.io/Interactive-Frontend-Development-Milestone-Project/). 
+It can also be viewed in its code form [here](https://github.com/Felix-Redwood/Interactive-Frontend-Development-Milestone-Project).
+
+I have taken steps to ensure that after every session with the development version of this project, I push my code to github. Currently there
+is no difference between the deployed version of this project and the development version.
 
 Credits:
 --------
 
-
-
 Content:
---------
+
+* The coordinates for the fictional YouGym locations were taken from the locations of real gyms, for the purpose of realism.
+
 
 Media:
-------
+
+* The photo used as the main image in the main page was obtained from [burst.shopify.com](https://burst.shopify.com/).
 
 
 Acknowledgements:
------------------
 
-
+* I gained the coding knowledge neccesary to make this site from the [Code Institute](https://codeinstitute.net/), Dublin.
