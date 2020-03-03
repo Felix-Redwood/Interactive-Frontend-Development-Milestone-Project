@@ -122,8 +122,8 @@ stack on top of each other.
 Deployment:
 -----------
 
-This project is deployed to GitHub pages, and can be viewed in its rendered form [here](https://felix-redwood.github.io/Interactive-Frontend-Development-Milestone-Project/). 
-It can also be viewed in its code form [here](https://github.com/Felix-Redwood/Interactive-Frontend-Development-Milestone-Project).
+This project is deployed to GitHub pages, and can be viewed in its rendered form [here](https://felix-redwood.github.io/YouGym-email-harvester/). 
+It can also be viewed in its code form [here](https://github.com/Felix-Redwood/YouGym-email-harvester).
 
 I have taken steps to ensure that after every session with the development version of this project, I push my code to github. Currently there
 is no difference between the deployed version of this project and the development version.
