@@ -87,6 +87,7 @@ that have mentioned the YouGym brand (this is also good for the purposes of Sear
 
 Technologies used:
 ------------------
+
 * [Bootstrap](https://getbootstrap.com/) was used for its HTML, CSS and JavaScript classes.
 * [jQuery](https://jquery.com/) was used in the creation of the JavaScript code for the site.
 * [Burst](https://burst.shopify.com/) was used to download the main page image.
@@ -121,6 +122,21 @@ stack on top of each other.
 
 Deployment:
 -----------
+
+### Setting up the Google Maps API:
+
+To set up the Google Maps API, I first created an API key using the [Google Cloud Platform Console](https://cloud.google.com/console/google/maps-apis/overview).  
+
+I then added this API key to my project, using the following string:  
+  
+```
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+type="text/javascript"></script>
+```
+  
+(In this string, I replaced 'YOUR_API_KEY' with the API key I created for the project)  
+
+### Project Deployment Information:
 
 This project is deployed to GitHub pages, and can be viewed in its rendered form [here](https://felix-redwood.github.io/YouGym-email-harvester/). 
 It can also be viewed in its code form [here](https://github.com/Felix-Redwood/YouGym-email-harvester).
