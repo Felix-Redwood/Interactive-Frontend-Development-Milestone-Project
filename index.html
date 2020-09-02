@@ -18,6 +18,9 @@
     <!--jQuery link-->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 
+    <!--Validator Links-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.js"></script>
 
 </head>
 
@@ -73,13 +76,16 @@
                     <div class="col-12 col-md-6 email-box" id="emailSumbitContainer">
                         <div class="media">
                             <div class="media-body">
-                                <form action="#" onsubmit="collectEmail()">
+                                <form id="emailForm" action="#" onsubmit="collectEmail()">
                                     <!-- this form will gather the emails -->
                                     <label for="user-email" class="">Email:</label> <br>
-                                    <input type="text" name="uemail" id="uemail" class="email-input" placeholder=" Example@email.com " required />
+                                    <input type="email" name="uemail" id="uemail" class="email-input" placeholder=" Example@email.com " required />
                                     <small class="form-text">We'll never share your email with anyone else.</small>
                                     <button type="submit" class="btn btn-warning btn-emailharvester">Submit:</button>
                                 </form>
+                                <script>
+                                    $("#emailForm").validate();
+                                </script>
                             </div>
                         </div>
                     </div>
