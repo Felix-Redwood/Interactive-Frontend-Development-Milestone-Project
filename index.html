@@ -73,12 +73,12 @@
                     <div class="col-12 col-md-6 email-box" id="emailSumbitContainer">
                         <div class="media">
                             <div class="media-body">
-                                <form action="#">
+                                <form action="#" onsubmit="collectEmail()">
                                     <!-- this form will gather the emails -->
                                     <label for="user-email" class="">Email:</label> <br>
                                     <input type="text" name="uemail" id="uemail" class="email-input" placeholder=" Example@email.com " required />
                                     <small class="form-text">We'll never share your email with anyone else.</small>
-                                    <button type="button" class="btn btn-warning btn-emailharvester" onclick="collectEmail()">Submit:</button>
+                                    <button type="submit" class="btn btn-warning btn-emailharvester">Submit:</button>
                                 </form>
                             </div>
                         </div>
